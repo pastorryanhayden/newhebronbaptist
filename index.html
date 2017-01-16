@@ -1,6 +1,6 @@
 ---
 layout: home
-main_image: /uploads/background3.jpg
+main_image:
 ---
 {% assign settings = settings.data.settings %}
 <nav id="menu">
@@ -18,7 +18,7 @@ main_image: /uploads/background3.jpg
   </ul>
   <a href="#" class="toggle-button"><img src="http://sitesforchurch.s3.amazonaws.com/Menu.png" alt="Menu" width="45" height="45px" /></a>
   </div><!--/top-->
-  <img src="http://placehold.it/320x140?text=logo" alt="">
+  <img src="http://placehold.it/320x140?text=logo" alt="" />
   <h1 class="editable">A small church with a big heart</h1>
   <p class="editable">If you live in the Robinson, IL area you can find a church home where you are loved and can grow in the faith. At New Hebron Baptist Church we love Jesus, love the Bible and love people.</p>
   <a href="#visit" class="cta button large">Plan A Visit</a>
@@ -33,25 +33,21 @@ main_image: /uploads/background3.jpg
   <h2 class="editable">What if you could find....</h2>
   <div class="find-sections">
   <div class="find-section editable">
-    <img src="http://sitesforchurch.s3.amazonaws.com/grace.jpg" alt="">
+    <img src="http://sitesforchurch.s3.amazonaws.com/grace.jpg" alt="" />
     <h3>GRACE</h3>
     <p>Learn about what Jesus has done for you. He’s paved the way for you to have a meaningful relationship with God and an eternal home in heaven.</p>
   </div><!--/find-section-->
   <div class="find-section editable">
-    <img src="http://sitesforchurch.s3.amazonaws.com/purpose.jpg" alt="">
+    <img src="http://sitesforchurch.s3.amazonaws.com/purpose.jpg" alt="" />
     <h3>PURPOSE</h3>
     <p>Live for more than toys and a paycheck. Figure out what God made you. Be a part of something with eternal consequences.</p>
   </div><!--/find-section-->
   <div class="find-section editable">
-    <img src="http://sitesforchurch.s3.amazonaws.com/community.jpg" alt="">
+    <img src="http://sitesforchurch.s3.amazonaws.com/community.jpg" alt="" />
     <h3>COMMUNITY</h3>
     <p>Don’t go it alone. Find friends who share your deepest beliefs and will help and encourage you through life.</p>
   </div><!--/find-section-->
-  <div class="find-section editable">
-    <img src="http://sitesforchurch.s3.amazonaws.com/instruction.jpg" alt="">
-    <h3>INSTRUCTION</h3>
-    <p>Discover what God’s word says. Hear it taught and explained regularly and let it nourish you and grow you in your Christian life.</p>
-  </div><!--/find-section-->
+  <div class="find-section editable"><p><img alt="" src="http://sitesforchurch.s3.amazonaws.com/instruction.jpg" /></p><h3>INSTRUCTION</h3><p>Discover what God&rsquo;s word says. Hear it taught and explained regularly and let it nourish you and grow you in your Christian life.</p></div><!--/find-section-->
   </div><!--/find-sections-->
 </div><!--/intro-->
 <div class="testimonials">
@@ -59,7 +55,7 @@ main_image: /uploads/background3.jpg
     {% for item in site.data.testimonials %}
    
   <div class="testimonial">
-    <img src="{{ item.Thumbnail[0].url }}" alt="">
+    <img src="{{ item.Thumbnail[0].url }}" alt="" />
     {{ item.Testimonial | markdownify }}
     <p class="signature"> {{ item.Person }}</p>
   </div><!--/testimonial-->
@@ -69,11 +65,11 @@ main_image: /uploads/background3.jpg
 </div><!--/testimonials-->
 <div class="visit">
   <h2 id="visit">{{site.data.visit2[0].Heading }}</h2>
-  <p class="intro-text" >{{site.data.visit2[0].Intro }}</p>
+  <p class="intro-text">{{site.data.visit2[0].Intro }}</p>
   <div class="visit-sections">
     {% for section in site.data.visit1 %}
   <div class="visit-section">
-    <img src="{{section.Image[0].url}}" alt="">
+    <img src="{{section.Image[0].url}}" alt="" />
     <div class="text">
       <h3>{{section.Heading}}</h3>
       {{section.Text | markdownify }}
@@ -87,7 +83,7 @@ main_image: /uploads/background3.jpg
 </div><!--/map-->
 <div class="pastor">
   <h2 id="pastor">Meet Our Pastor</h2>
-  <img src="{{ site.data.pastor[0].Image[0].url }}" alt="">
+  <img src="{{ site.data.pastor[0].Image[0].url }}" alt="" />
   {{ site.data.pastor[0].Text | markdownify }}
   <ul class="pastor-contact">
     <li class="email">{{ site.data.pastor[0].Email }} </li>
@@ -102,9 +98,9 @@ main_image: /uploads/background3.jpg
   <div class="featured-event">
   <div class="image">
     {% if event.Featured_Image %}
-    <img src="{{event.Featured_Image[0].url}}" alt="">
+    <img src="{{event.Featured_Image[0].url}}" alt="" />
     {% else %}
-    <img src="http://placehold.it/600x337" alt="">
+    <img src="http://placehold.it/600x337" alt="" />
     {% endif %}
   </div><!--/image-->
     <div class="details">
@@ -136,7 +132,7 @@ main_image: /uploads/background3.jpg
 <div class="photos">
   <div class="photos-inner" id="sqr-gallery">
   {% for img in site.data.images[0].Images  limit: 12 %}
-        <div class="photo"><a href="#" data-featherlight="{{img.url}}"><img src="{{img.thumbnails.large.url }}" alt=""></a></div>
+        <div class="photo"><a href="#" data-featherlight="{{img.url}}"><img src="{{img.thumbnails.large.url }}" alt="" /></a></div>
       {% endfor %}
   </div><!--/photos-inner-->
 </div><!--/gallery-->
