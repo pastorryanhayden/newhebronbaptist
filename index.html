@@ -64,18 +64,52 @@ main_image: /uploads/headerimage.jpg
   </div><!--/testimonials-wrapper-->
 </div><!--/testimonials-->
 <div class="visit">
-  <h2 id="visit">{{site.data.visit2[0].Heading }}</h2>
-  <p class="intro-text">{{site.data.visit2[0].Intro }}</p>
+  <h2 id="visit editable">Plan A Visit</h2>
+  <p class="intro-text editable">Visiting a new church can be a scary experience. We want to put you at ease by answering the most common questions people have….</p>
   <div class="visit-sections">
-    {% for section in site.data.visit1 %}
-  <div class="visit-section">
-    <img src="{{section.Image[0].url}}" alt="" />
+   <div class="visit-section editable">
+    <img src="https://dl.airtable.com/dS50BgHjS8mYSOFya4wF_services.jpg" alt="">
     <div class="text">
-      <h3>{{section.Heading}}</h3>
-      {{section.Text | markdownify }}
+      <h3>What are services like?</h3>
+      <p>We sing hymns praising God for all he does, preaching lasts any where from 20 minutes to 40 minutes. We love church family fellowship, and love to see new people come to know Christ as their personal Lord and Savior!</p>
+
     </div><!--/text-->
     </div><!--/visit-section-->
-   {% endfor %}
+   
+  <div class="visit-section editable">
+    <img src="https://dl.airtable.com/bgTRr6Q2yctESfIBAVv3_donuts.jpg" alt="">
+    <div class="text">
+      <h3>When do you meet?</h3>
+      <p>We meet every Sunday morning:</p>
+
+<ul>
+  <li>Sunday school starts at 9:30 Am</li>
+  <li>Regular service is at 10:30 Am</li>
+  <li>Evening service is at 6:30 PM</li>
+  <li>Wednesday evening starts at 6:30 PM</li>
+</ul>
+
+    </div><!--/text-->
+    </div><!--/visit-section-->
+   
+  <div class="visit-section editable">
+    <img src="https://dl.airtable.com/5YzAn3EWSlOY8n7lVRdO_kids.png" alt="">
+    <div class="text">
+      <h3>Is there anything for my kids?</h3>
+      <p>We have a kids Sunday school. And we also have a Junior church during the morning sermon for kids ages 3-11. We also have a nursery avaliable for kids 0-3.</p>
+
+    </div><!--/text-->
+    </div><!--/visit-section-->
+   
+  <div class="visit-section editable">
+    <img src="https://dl.airtable.com/gbSnMT44SJKsvMzJcs98_Church.jpg" alt="">
+    <div class="text">
+      <h3>Where do you meet?</h3>
+      <p>Our church is 4 miles south of Robinson on the west side of the road.</p>
+
+    </div><!--/text-->
+    </div><!--/visit-section-->
+   
     </div><!--/visit-sections-->
 </div><!--/visit-->
 <div class="map" id="canvas1">
