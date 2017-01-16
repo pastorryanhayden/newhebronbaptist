@@ -60,6 +60,9 @@ collections:
   ministry_leaders:
     output: false
     _hide_content: true
+  testimonials:
+    output: false
+    _hide_content: true
 
 
 author:
