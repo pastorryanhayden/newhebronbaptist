@@ -8,110 +8,138 @@ main_image: /uploads/background3.jpg
 </nav>
 
 <main id="panel">
-  <div class="header">
-    <div class="wrapper">
-    <h1><a href="{{site.url}}"><img src="{{settings.church_logo_image_path}}" alt="{{settings.church_name}}" /></a></h1>
-    <a href="#" class="toggle-button"><img src="http://sitesforchurch.s3.amazonaws.com/Menu.png" alt="Menu" width="45" height="45px" /></a>
-    </div><!--/wrapper-->
-  </div><!--/header-->
-  <div class="hero" style="background: url({{page.main_image}}) no-repeat center center; background-size: cover;">
-      <div class="main-heading">
-      <h1 class="editable">A Church home for Cincinnati Families</h1>
-      <p class="editable">If you live in the heart Cincinnati, OH area you can find a church home where you are loved and can grow in the faith. At Hartwell Baptist Church we love Jesus, love the Bible and love people.</p>
-      <a href="#" class="hollow button">Plan A Visit</a>
-      </div><!--/main-heading-->
-  </div><!--/hero-->
-  <div class="main-plug">
-    <p class="editable">At Hartwell Baptist Church we have one statement that we repeat often: It does make a difference what you believe.   Opinions, religious tradition, and fuzzy feelings all have their place, but not when it comes to eternal truths.  Jesus stated in John 14:6, I am the way, THE TRUTH, and the life; no man cometh to the Father but by me.</p>
-    <h2 class="editable">What if you could find?</h2>
-        <div class="hero-sections">
-          <div class="section editable">
-              <h3><i class="fa fa-book"></i> Truth</h3>
-              <p>Whether it is our Sunday School, our Morning or Evening Preaching times, or our Wednesday Evening Bible study and prayer- we use the Bible to discover truth.</p>
-          </div><!--/section-->
-          <div class="section editable">
-              <h3><i class="fa fa-heart"></i> Grace</h3>
-              <p>Learn about what Jesus has done for you.  He’s paved the way for you to have a meaningful relationship with God and an eternal home in heaven.</p>
-          </div><!--/section-->
-          <div class="section editable">
-              <h3><i class="fa fa-bullseye"></i> Purpose</h3>
-              <p>Live for more than toys and a paycheck.  Figure out what God made you.  Be a part of something with eternal consequences.</p>
-          </div><!--/section-->
-          <div class="section editable">
-              <h3><i class="fa fa-comments"></i> Community</h3>
-              <p>Don’t go it alone.  Find friends who share your deepest beliefs and will help and encourage you through life. Our Pastor has said it numerous times- the local New Testament church is the greatest support group you could ever belong to.</p>
-          </div><!--/section-->
-          <!-- <div class="section editable">
-              <h3>Instruction</h3>
-              <p>Discover what God’s word says. Hear it taught and explained regularly and let it nourish you and grow you in your Christian life.</p>
-          </div>--><!--/section--> 
-      </div><!--/hero-sections-->
-  </div><!--/main-plug-->
-  <div class="plan-a-visit">
-    <h2>Plan A Visit</h2>
-    <div class="row small-up-1 medium-up-2 visit-sections">
-      <div class="column section editable"><h3>What are services like?</h3><p>At Hartwell Baptist Church we experience Church like it used to be. We sing enthusiastically songs that praise the Lord and prepare our hearts for the preaching of the Word of God. Our Pastor preaches in a way that is both easily understood and expositional in content. Each service is brought to a conclusion by receiving an offering.</p><h4>What about an offering?</h4><p>The offering is a way for God&rsquo;s people to obey the Word of God through giving to meet the needs of Hartwell Baptist Church.</p></div><!--/column-->
-      <div class="column section editable">
-        <h3>When do you meet?</h3>
-        <h4>Sundays:</h4>
-        <p>Sunday School - 9:30AM <br />
-          Morning Service - 10:30AM <br />
-        Evening Service - 6:00 PM</p>
-        <h4>Wednesdays</h4>
-        <p>Bible Study &amp; Prayer Meeting - 7:00 PM</p>
-      </div><!--/column-->
-      <div class="column section editable">
-        <h3>Is there anything for my kids?</h3>
-        <p>We provide the following for children:</p>
-        <ul>
-          <li>A Sunday school service for elementary aged kids.</li>
-          <li>Occasional youth activities for teenagers</li>
-        </ul>
-      </div><!--/column-->
-      <div class="column section editable">
-        <h3>Am I expected to give?</h3>
-        <p>No.  We do take an offering every service, but it is for our members.  We do not expect our guests to give anything.  You’ve given us enough by visiting.</p>
-      </div><!--/column-->
-      <div class="column section editable">
-        <h3>What do you believe?</h3>
-        <p>We believe what Baptist people have always believed including the inspiration and inerrancy of Scripture, the Trinity of the godhead, the Virgin Birth of Christ, Salvation by grace through Faith in Christ’s finished work, the premillennial return of Christ, etc.</p>
-        <a href="#">View our Statement of faith</a>
-      </div><!--/column-->
-      <div class="column section editable">
-        <h3>Where is your church??</h3>
-        <p>We are located at 8222 Moon Avenue.  </p>
-      </div><!--/column-->
-      
-    </div><!--/row small-up etc.-->
-  </div><!--/plan-a-visit-->
-  <div class="photos">
+  <div class="header" {% if page.main_image %} style=" background: url({{ page.main_image }}) no-repeat center center; background-size: cover;"
+{% else %}style=" background: url({{settings.main_image}}) no-repeat center center; background-size: cover;" {% endif %}>
+<div class="top">
+  <ul class="socialbar">
+    <li><a href="#"><i class="fa fa-phone"></i></a></li>
+    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+  </ul>
+  <a href="#" class="toggle-button"><img src="http://sitesforchurch.s3.amazonaws.com/Menu.png" alt="Menu" width="45" height="45px" /></a>
+  </div><!--/top-->
+  <img src="http://placehold.it/320x140?text=logo" alt="">
+  <h1 class="editable">A small church with a big heart</h1>
+  <p class="editable">If you live in the Robinson, IL area you can find a church home where you are loved and can grow in the faith. At New Hebron Baptist Church we love Jesus, love the Bible and love people.</p>
+  <a href="#visit" class="cta button large">Plan A Visit</a>
+  <ul class="menu">
+  {% if site.data.events[0].Event_Title %}
+    <li><a href="#"><i class="fa fa-calendar"></i> View Upcoming Events</a></li>{% endif %}
+    <li><a href="#pastor"><i class="fa fa-user"></i> Meet Our Pastor</a></li>
+    <li><a href="#contact"><i class="fa fa-envelope"></i> Get In Touch</a></li>
+  </ul>
+</div><!--/header-->
+<div class="intro">
+  <h2 class="editable">What if you could find....</h2>
+  <div class="find-sections">
+  <div class="find-section editable">
+    <img src="http://sitesforchurch.s3.amazonaws.com/grace.jpg" alt="">
+    <h3>GRACE</h3>
+    <p>Learn about what Jesus has done for you. He’s paved the way for you to have a meaningful relationship with God and an eternal home in heaven.</p>
+  </div><!--/find-section-->
+  <div class="find-section editable">
+    <img src="http://sitesforchurch.s3.amazonaws.com/purpose.jpg" alt="">
+    <h3>PURPOSE</h3>
+    <p>Live for more than toys and a paycheck. Figure out what God made you. Be a part of something with eternal consequences.</p>
+  </div><!--/find-section-->
+  <div class="find-section editable">
+    <img src="http://sitesforchurch.s3.amazonaws.com/community.jpg" alt="">
+    <h3>COMMUNITY</h3>
+    <p>Don’t go it alone. Find friends who share your deepest beliefs and will help and encourage you through life.</p>
+  </div><!--/find-section-->
+  <div class="find-section editable">
+    <img src="http://sitesforchurch.s3.amazonaws.com/instruction.jpg" alt="">
+    <h3>INSTRUCTION</h3>
+    <p>Discover what God’s word says. Hear it taught and explained regularly and let it nourish you and grow you in your Christian life.</p>
+  </div><!--/find-section-->
+  </div><!--/find-sections-->
+</div><!--/intro-->
+<div class="testimonials">
+  <div class="testimonials-wrapper">
+    {% for item in site.data.testimonials %}
+   
+  <div class="testimonial">
+    <img src="{{ item.Thumbnail[0].url }}" alt="">
+    {{ item.Testimonial | markdownify }}
+    <p class="signature"> {{ item.Person }}</p>
+  </div><!--/testimonial-->
+   {% endfor %}
+ 
+  </div><!--/testimonials-wrapper-->
+</div><!--/testimonials-->
+<div class="visit">
+  <h2 id="visit">{{site.data.visit2[0].Heading }}</h2>
+  <p class="intro-text" >{{site.data.visit2[0].Intro }}</p>
+  <div class="visit-sections">
+    {% for section in site.data.visit1 %}
+  <div class="visit-section">
+    <img src="{{section.Image[0].url}}" alt="">
+    <div class="text">
+      <h3>{{section.Heading}}</h3>
+      {{section.Text | markdownify }}
+    </div><!--/text-->
+    </div><!--/visit-section-->
+   {% endfor %}
+    </div><!--/visit-sections-->
+</div><!--/visit-->
+<div class="map" id="canvas1">
+       {{site.data.visit2[0].Map_Embed}}
+</div><!--/map-->
+<div class="pastor">
+  <h2 id="pastor">Meet Our Pastor</h2>
+  <img src="{{ site.data.pastor[0].Image[0].url }}" alt="">
+  {{ site.data.pastor[0].Text | markdownify }}
+  <ul class="pastor-contact">
+    <li class="email">{{ site.data.pastor[0].Email }} </li>
+    <li class="phone"> {{ site.data.pastor[0].Phone }} </li>
+  </ul>
+</div><!--/pastor-->
+{% if site.data.events[0].Event_Title %}
+<div class="events">
+  <h2>Upcoming Events</h2>
+
+  {% for event in site.data.featuredevent %}
+  <div class="featured-event">
+  <div class="image">
+    {% if event.Featured_Image %}
+    <img src="{{event.Featured_Image[0].url}}" alt="">
+    {% else %}
+    <img src="http://placehold.it/600x337" alt="">
+    {% endif %}
+  </div><!--/image-->
+    <div class="details">
+      <h4><a href="#">{{event.Event_Title}}</a></h4>
+      <p class="date"><strong>Date:</strong> {{event.Date | date: "%A, %B %-d"}}</p>
+      <p class="time"><strong>Time:</strong> {{event.Date | date: "%I:%M %p"}}</p>
+      <p class="description">
+        {{event.Event_Description}}
+      </p>
+      <a href="#" class="read-more">Read More</a>
+    </div><!--/details-->
+  </div><!--/featured-event-->
+  {% endfor %}
+  {% for event in site.data.events %}
+  <div class="single-event">
+      <div class="date-display">
+        <p class="number">{{event.Date | date: "%d"}}</p>
+        <p class="month">{{event.Date | date: "%b"}}</p>
+      </div><!--/date-display-->
+      <div class="event-info">
+        <h4><a href="#">{{event.Event_Title}}</a></h4>
+        <p class="date"><strong>Date:</strong> {{event.Date | date: "%A, %B %-d"}}</p>
+        <p class="time"><strong>Time:</strong> {{event.Date | date: "%I:%M %p"}}</p>
+      </div><!--/event-info-->
+  </div><!--/single-event-->
+  {% endfor %}
+</div><!--/events-->
+{% endif %}
+<div class="photos">
   <div class="photos-inner" id="sqr-gallery">
-     {% for img in site.photo_gallery limit: 12 %}
-        <div class="photo"><a href="#" data-featherlight="{{img.image_path}}" style="background: url({{img.image_path }}) no-repeat center center; background-size: cover; width: 250px; height: 250px; line-height: 250px; display: block;"></a></div>
+  {% for img in site.data.images[0].Images  limit: 12 %}
+        <div class="photo"><a href="#" data-featherlight="{{img.url}}"><img src="{{img.thumbnails.large.url }}" alt=""></a></div>
       {% endfor %}
   </div><!--/photos-inner-->
 </div><!--/gallery-->
-<div class="meet-pastor">
-  
-  <h2 class="editable">Our Pastors:</h2>
-  {% for leader in site.leaders %}
-  <div class="leader">
-  <img src="{{ leader.Thumbnail_path }}" alt="{{leader.Name}}" />
-  <h3>{{leader.Name}}</h3>
-  <ul class="social-menu">
-    {% if  leader.Twitter %}
-    <li><a href="leader.twitter"><img src="http://sitesforchurch.s3.amazonaws.com/twitter.png" alt="" /></a></li>{% endif %}
-    {% if  leader.Facebook %}
-    <li><a href="leader.facebook"><img src="http://sitesforchurch.s3.amazonaws.com/facebook.png" alt="" /></a></li>{% endif %}
-    {% if  leader.Email %}
-    <li><a href="leader.email"><img src="http://sitesforchurch.s3.amazonaws.com/email-1.png" alt="" /></a></li>{% endif %}
-  </ul>  
-  {{ leader.content | truncatewords: 40 }}
-  <br />
-  <a href="{{leader.url}}" class="button">Read More</a>
-  
-  </div><!--/leader--> 
-  {% endfor %}
-</div><!--/Meet-pastor-->
+
 {% include footer.html %}
 </main>
