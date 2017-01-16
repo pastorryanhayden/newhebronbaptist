@@ -1,0 +1,20 @@
+just testing this client
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/_includes/footer.html b/_includes/footer.html
+index 572c983..71e539b 100644
+--- a/_includes/footer.html
++++ b/_includes/footer.html
+@@ -6,7 +6,7 @@
+   {{settings.City}}, {{settings.State}} {{settings.Zip}} 
+   </p>
+   <p>{{settings.phone}} <br>
+-    {{settings.church_email}}
++    {{settings.church_email}} 
+   </p>
+  
+ </div><!--/contact-->
+\ No newline at end of file
