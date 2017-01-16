@@ -52,12 +52,12 @@ main_image: /uploads/headerimage.jpg
 </div><!--/intro-->
 <div class="testimonials">
   <div class="testimonials-wrapper">
-    {% for item in site.data.testimonials %}
+    {% for item in site.testimonials %}
    
   <div class="testimonial">
-    <img src="{{ item.Thumbnail[0].url }}" alt="" />
-    {{ item.Testimonial | markdownify }}
-    <p class="signature"> {{ item.Person }}</p>
+    <img src="{{ item.thumbnail_image }}" alt="" />
+    {{ item.testimonial_markdown | markdownify }}
+    <p class="signature"> {{ item.person }}, {{item.hometown}}</p>
   </div><!--/testimonial-->
    {% endfor %}
  
