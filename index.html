@@ -120,7 +120,7 @@ main_image: /uploads/headerimage.jpg
   {% assign pastor = site.leaders | where: "Is_senior_pastor", true %} 
 
   {% for item in pastor %}
-  <img src="{{ item.Name }}" alt="" />
+  <img src="{{ item.Thumbnail_path }}" alt="" />
   {{ item.content }}
   <ul class="pastor-contact">
     <li class="email">{{ item.Email }} </li>
