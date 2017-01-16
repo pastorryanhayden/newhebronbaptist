@@ -116,13 +116,17 @@ main_image: /uploads/headerimage.jpg
        {{site.data.visit2[0].Map_Embed}}
 </div><!--/map-->
 <div class="pastor">
-  <h2 id="pastor">Meet Our Pastor</h2>
-  <img src="{{ site.data.pastor[0].Image[0].url }}" alt="" />
-  {{ site.data.pastor[0].Text | markdownify }}
+  <h2 id="pastor editable">Meet Our Pastor</h2>
+  {% assign pastor = site.leaders | where: "Is_senior_pastor", true %} 
+
+  {% for item in pastor %}
+  <img src="{{ item.Name }}" alt="" />
+  {{ item.content }}
   <ul class="pastor-contact">
-    <li class="email">{{ site.data.pastor[0].Email }} </li>
-    <li class="phone"> {{ site.data.pastor[0].Phone }} </li>
+    <li class="email">{{ item.Email }} </li>
+    <li class="phone"> {{ item.Phone }} </li>
   </ul>
+  {% endfor %}
 </div><!--/pastor-->
 {% if site.data.events[0].Event_Title %}
 <div class="events">
