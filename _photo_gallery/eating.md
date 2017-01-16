@@ -1,5 +1,5 @@
 ---
-title: Eating
-image_path: /uploads/2016-08-30-12-04-38.jpg
+title: eating
+image_path: /uploads/image-24-october-2016-03-09-pm.jpg
 ministry:
 ---
