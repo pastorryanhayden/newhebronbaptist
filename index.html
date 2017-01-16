@@ -169,8 +169,8 @@ main_image: /uploads/headerimage.jpg
 {% endif %}
 <div class="photos">
   <div class="photos-inner" id="sqr-gallery">
-  {% for img in site.data.images[0].Images  limit: 12 %}
-        <div class="photo"><a href="#" data-featherlight="{{img.url}}"><img src="{{img.thumbnails.large.url }}" alt="" /></a></div>
+  {% for img in site.photo_gallery limit: 12 %}
+        <div class="photo"><a href="#" data-featherlight="{{img.image_path}}" style="background: url({{img.image_path }}) no-repeat center center; background-size: cover; width: 250px; height: 250px; line-height: 250px; display: block;"></a></div>
       {% endfor %}
   </div><!--/photos-inner-->
 </div><!--/gallery-->
