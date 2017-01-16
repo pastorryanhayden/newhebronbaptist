@@ -12,9 +12,9 @@ main_image: /uploads/headerimage.jpg
 {% else %}style=" background: url({{settings.main_image}}) no-repeat center center; background-size: cover;" {% endif %}>
 <div class="top">
   <ul class="socialbar">
-    <li><a href="#"><i class="fa fa-phone"></i></a></li>
-    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="tel:{{settings.phone }}"><i class="fa fa-phone"></i></a></li>
+    <li><a href="mailto: {{settings.church_email}}"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="{{settings.facebook}}"><i class="fa fa-facebook"></i></a></li>
   </ul>
   <a href="#" class="toggle-button"><img src="http://sitesforchurch.s3.amazonaws.com/Menu.png" alt="Menu" width="45" height="45px" /></a>
   </div><!--/top-->
