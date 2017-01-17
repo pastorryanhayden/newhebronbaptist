@@ -4,8 +4,8 @@ main_bright_color: '#be552b'
 secondary_bright_color: '#931621'
 main_font: "'Open Sans', sans-serif"
 main_font_import_code: "@import url('https://fonts.googleapis.com/css?family=Open+Sans');"
-secondary_font: "'Francois One', sans-serif"
-secondary_font_import_code: "@import url('https://fonts.googleapis.com/css?family=Francois+One');"
+secondary_font: "'Bree Serif', serif"
+secondary_font_import_code: "@import url('https://fonts.googleapis.com/css?family=Bree+Serif');"
 _comments:
   main_font: "i.e. 'Playfair Display', serif - IMPORTANT - leave off the 'font-family' and the trailing semi-colon!"
   main_font_import_code: "i.e. @import url('https://fonts.googleapis.com/css?family=Playfair+Display'); - IMPORTANT - INCLUDE the trailing-semicolon!"
