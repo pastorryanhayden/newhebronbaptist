@@ -117,7 +117,7 @@ main_image: /uploads/header-image.jpg
 </div><!--/visit-->
 {% include map.html %}
 <div class="pastor">
-  <h2 id="pastor editable">Meet Our Pastor</h2>
+  <h2 id="pastor" class="editable">Meet Our Pastor</h2>
   {% assign pastor = site.leaders | where: "Is_senior_pastor", true %} 
 
   {% for item in pastor %}
