@@ -1,6 +1,6 @@
-main_dark_color: '#4e4e4e'
-main_light_color: '#e4e4e4'
-main_bright_color: '#be552b'
+main_dark_color: '#2c3351'
+main_light_color: '#d5d1bf'
+main_bright_color: '#ff503b'
 secondary_bright_color: '#931621'
 main_font: "'Open Sans', sans-serif"
 main_font_import_code: "@import url('https://fonts.googleapis.com/css?family=Open+Sans');"
