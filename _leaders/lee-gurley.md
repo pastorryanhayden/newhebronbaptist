@@ -12,4 +12,4 @@ layout: leader
 ---
 
 
-Pastor Lee Gurley has been the Pastor of New Hebron Baptist Church since 2011.
+Pastor Lee Gurley has been the Pastor of New Hebron Baptist Church since 2013.
