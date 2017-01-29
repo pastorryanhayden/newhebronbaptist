@@ -1,6 +1,6 @@
 ---
-name: Adam McCaslin
-Position: Senior Pastor
+name:
+Position:
 email:
 thumbnail_image:
 ---
