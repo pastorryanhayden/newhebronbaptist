@@ -3,7 +3,7 @@ church_logo_image_path: /uploads/l04-light2.png
 church_logo2_image_path: /uploads/l04small.png
 main_image: /uploads/header-image.jpg
 phone: (618) 544-7131
-church_email: lgurley87@gmail.com
+church_email: churchnewhebronbaptist@gmail.com
 facebook: 'https://www.facebook.com/New-Hebron-Baptist-Church-120393777976571/'
 twitter:
 youtube:
@@ -15,7 +15,7 @@ Zip: '62454'
 lattitude: '38.949608'
 longitude: '-87.744489'
 map_zoom_level: 14
-main_blog_image: /uploads/1.jpg
-main_sermon_image: /uploads/2.jpg
-default_calendar_image: /uploads/hartwell.jpg
-Google_calendar_id: leonhart4@gmail.com
+main_blog_image:
+main_sermon_image:
+default_calendar_image:
+Google_calendar_id: churchnewhebronbaptist@gmail.com
