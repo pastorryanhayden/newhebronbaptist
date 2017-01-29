@@ -3,7 +3,7 @@ Name: Lee Gurley
 Position:
   - Senior Pastor
 Phone:
-Email: pastor@newhebronbaptist.org
+Email: Lgurley87@gmail.com
 Thumbnail_path: /uploads/pastor.jpg
 Facebook: 'https://www.facebook.com/lgurley87?fref=ts'
 Twitter: 'https://twitter.com/GurleyLee'
