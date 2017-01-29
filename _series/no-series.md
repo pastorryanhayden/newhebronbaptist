@@ -1,6 +1,6 @@
 ---
 name: No Series
-published: true
+published: false
 description_html:
 featured_image: /uploads/2.jpg
 ---
