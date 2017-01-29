@@ -5,7 +5,7 @@ Position:
 Phone:
 Email: Lgurley87@gmail.com
 Thumbnail_path: /uploads/pastor.jpg
-Facebook: 'https://www.facebook.com/lgurley87?fref=ts'
+Facebook: 'https://www.facebook.com/lgurley87'
 Twitter: 'https://twitter.com/GurleyLee'
 Is_senior_pastor: true
 layout: leader
